@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     IEnumerator failure()
     {
         yield return new WaitForSeconds(3f);
+        defeated = false;
         SceneManager.LoadScene("Defeat");
     }
 
