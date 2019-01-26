@@ -16,14 +16,14 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        smooth = 1.0f;
+        smooth = 10.0f;
     }
 
     void LateUpdate()
     {
         if (!player)
         {
-            player = GameObject.Find("playerPossum");
+            player = GameObject.Find("playerPossum(Clone)");
         }
         
         SetBounds();
