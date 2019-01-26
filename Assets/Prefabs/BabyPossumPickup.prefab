@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 61888297812405274}
   - component: {fileID: 114536301142113426}
   - component: {fileID: 50502820369603852}
-  - component: {fileID: 212586186142564512}
   - component: {fileID: 61911036905815724}
+  - component: {fileID: 212196259358577344}
   m_Layer: 9
   m_Name: BabyPossumPickup
   m_TagString: Baby
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466850730341850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.828349, y: 0.84244466, z: 0.23015949}
-  m_LocalScale: {x: 0.047103237, y: 0.047063034, z: 0.045288}
+  m_LocalPosition: {x: -2.1009, y: 0.75, z: 0.23015949}
+  m_LocalScale: {x: 0.23436657, y: 0.23416655, z: 0.2253347}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -76,18 +76,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 5.283268, y: -0.09223175}
+  m_Offset: {x: -0.055866957, y: -0.196329}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.64, y: 8.61}
+    oldSize: {x: 2.86, y: 2.82}
     newSize: {x: 27.64, y: 8.61}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.604069, y: 8.193867}
+  m_Size: {x: 2.7361917, y: 2.7113879}
   m_EdgeRadius: 0
 --- !u!61 &61911036905815724
 BoxCollider2D:
@@ -101,18 +101,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4.277693, y: -2.5993984}
+  m_Offset: {x: -0.12138528, y: -1.2070484}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 27.64, y: 8.61}
+    oldSize: {x: 2.86, y: 2.82}
     newSize: {x: 27.64, y: 8.61}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.251503, y: 3.4112039}
+  m_Size: {x: 1.5140425, y: 0.6265031}
   m_EdgeRadius: 0
 --- !u!114 &114536301142113426
 MonoBehaviour:
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc0df2f4e03af049bcad3451631ac65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &212586186142564512
+--- !u!212 &212196259358577344
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bed4d329b56ae8a4895d31a121f87d1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
