@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator gotHit()
     {
         //Si te lastiman, la corutina espera para hacerte vulnerable de nuevo y devolver el color.
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         vulnerable = true;
         Color temp = GetComponent<SpriteRenderer>().color;
         temp.a = 1f;
@@ -79,17 +79,23 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             canJump = true;
-
         } 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        print("wewerewr" + collision.gameObject.tag);
         //si se recolecta un bebe, el bool de hasBabies es verdadero
         if (collision.gameObject.tag == "Baby")
         {
             print("recolecto bebe");
             babyCount += 1;
+        }
+
+        if (collision.gameObject.tag == "Goal")
+        {
+
+            (collision.gameObject.GetComponent<Victory>()).goalReach();
         }
 
         //si se colisiona con un enemigo y hay bebes, el babyCount baja, si no hay bebes, moris
@@ -105,7 +111,7 @@ public class PlayerController : MonoBehaviour
 
             print("pierdo bebe");
             babyCount = 0;
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(-5, 10), ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(-2, 4), ForceMode2D.Impulse);
             vulnerable = false;
             Color temp = GetComponent<SpriteRenderer>().color;
             temp.a = 0.5f;

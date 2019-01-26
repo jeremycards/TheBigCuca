@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Baby
   - Tree
+  - Goal
   layers:
   - Default
   - TransparentFX
