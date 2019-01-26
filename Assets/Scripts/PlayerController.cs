@@ -107,6 +107,7 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject lostBaby = Instantiate(babyPickup, babyspawnPoint.position, babyspawnPoint.rotation);
                 lostBaby.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-20, 20), 10), ForceMode2D.Impulse);
+                Destroy(lostBaby, 5f);
             }
 
             print("pierdo bebe");
