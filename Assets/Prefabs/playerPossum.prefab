@@ -198,7 +198,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1826086605571610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.693, y: 1.044, z: 0}
+  m_LocalPosition: {x: 25.52462, y: 12.543888, z: 0}
   m_LocalScale: {x: 0.24387634, y: 0.21759503, z: 0.086691245}
   m_Children:
   - {fileID: 4756750666009780}
@@ -466,10 +466,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHeight: 500
+  jumpHeight: 10
   babyCount: 0
   hasBabies: 1
   vulnerable: 1
+  canJump: 0
   babyPickup: {fileID: 1466850730341850, guid: f499c62fe50b4bc4dad4b482239e6720, type: 2}
   babyspawnPoint: {fileID: 4712866509742266}
 --- !u!114 &114575681784102568
