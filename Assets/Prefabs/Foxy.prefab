@@ -24,9 +24,10 @@ GameObject:
   - component: {fileID: 95376775218231956}
   - component: {fileID: 212504981739641066}
   - component: {fileID: 61837733846462676}
-  m_Layer: 0
+  - component: {fileID: 114418161111065158}
+  m_Layer: 12
   m_Name: Foxy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4503519950129916}
   - component: {fileID: 212665084750474006}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FoxRender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4467597815109024}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: groundDetection
   m_TagString: GrounDetection
   m_Icon: {fileID: 0}
@@ -70,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4786909480068896}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: StartPatrolPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071467127187814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.55, y: 6.2, z: 0}
+  m_LocalPosition: {x: 15.730894, y: 4.7891083, z: 0.46133518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4503519950129916}
@@ -210,6 +211,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114418161111065158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1071467127187814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cda0e5dff5921642a32c70777a15a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  speed: 5
+  atackRange: 4
+  damage: 0
+  lastAtackTime: 0
+  atackDelay: 2
+  StartPatrolPoint: {fileID: 0}
+  EndPatrolPoint: {fileID: 0}
+  playerPos: {fileID: 0}
+  PlayerInSigth: 0
 --- !u!212 &212504981739641066
 SpriteRenderer:
   m_ObjectHideFlags: 1

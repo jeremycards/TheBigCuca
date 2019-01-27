@@ -104,6 +104,9 @@ public class PlayerController : MonoBehaviour
 
 
 
+        print("me daña");
+
+
         if (hasBabies == false)
         {
             Destroy(gameObject);

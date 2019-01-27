@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isFollowing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Atack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -53,34 +53,6 @@ MonoBehaviour:
   speed: 3
   groundDetection: {fileID: 0}
   DetectionDistance: 0.5
-  playerPos: {fileID: 0}
-  AtackDistance: 4
---- !u!114 &114164955402221328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2845835bf1d2eac4fb72e32c22ac77ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPos: {fileID: 0}
-  AtackDistance: 4
---- !u!114 &114638830722981734
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb444a5c3a74ba4f888e4ca00892e3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iddleTime: 5
-  actualTime: 0
   playerPos: {fileID: 0}
   AtackDistance: 4
 --- !u!1101 &1101052526507028686
@@ -126,7 +98,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.75
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -187,8 +159,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101446387399090900}
-  m_StateMachineBehaviours:
-  - {fileID: 114164955402221328}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -209,7 +180,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: FoxPatrol
+  m_Name: FoxRun
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -241,8 +212,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101295314819205746}
-  m_StateMachineBehaviours:
-  - {fileID: 114638830722981734}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -273,7 +243,7 @@ AnimatorStateMachine:
     m_Position: {x: 276, y: -264, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102239027403448680}
-    m_Position: {x: 0, y: -72, z: 0}
+    m_Position: {x: 0, y: -96, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101171467539262140}
