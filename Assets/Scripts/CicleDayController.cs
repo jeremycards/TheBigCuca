@@ -14,7 +14,7 @@ public class CicleDayController : MonoBehaviour
         //timeManager = GameObject.Find("Timer").GetComponent<TimeManager>();
         mat = GetComponent<MeshRenderer>().material;
         lerpedColor = mat.color;
-        col = new Color(255f, 165f, 0f);
+        //col = new Color(255f, 165f, 0f);
     }
 
     void Update()
