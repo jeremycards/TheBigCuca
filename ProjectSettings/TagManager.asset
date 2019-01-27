@@ -65,6 +65,9 @@ TagManager:
   - name: babies
     uniqueID: 1735212069
     locked: 0
+  - name: Enemy
+    uniqueID: 1620290259
+    locked: 0
   - name: foreground
     uniqueID: 2276839917
     locked: 0
