@@ -16,7 +16,10 @@ public class CameraController : MonoBehaviour
             offset = transform.position - player.transform.position;
         }
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = player.transform.position + offset;
+        if (player) {
+
+            transform.position = player.transform.position + offset;
+        }
     }
     /*
     private GameObject player;

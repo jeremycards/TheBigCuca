@@ -109,8 +109,9 @@ public class PlayerController : MonoBehaviour
 
         if (hasBabies == false)
         {
-            Destroy(gameObject);
+            this.GetComponent<SpriteRenderer>().enabled = false ;
             GameManager.Instance.defeated = true;
+            return;
         }
 
         for (int i = 0; i < babyCount; i++)

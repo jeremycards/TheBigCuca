@@ -74,7 +74,9 @@ public class FoxController : MonoBehaviour {
             if (Time.time > lastAtackTime + atackDelay)
             {
 
+                PlayerInSigth = true;
                 animator.SetTrigger("Atack");
+                lastAtackTime = Time.time;
 
             }
 
@@ -88,7 +90,6 @@ public class FoxController : MonoBehaviour {
         if (distanceToPlayer < atackRange)
         {
             playerPos.SendMessage("TakeDamage");
-            lastAtackTime = Time.time;
         }
 
         PlayerInSigth = false;
