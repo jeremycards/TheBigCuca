@@ -34,15 +34,15 @@ public class PlayerController : MonoBehaviour
             {
 
                 transform.Translate(speed * Time.deltaTime, 0f, 0f);
-                transform.eulerAngles = new Vector3(0,0,0);
-                animator.SetBool("isRunning",true);
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                animator.SetBool("isRunning", true);
 
-            }else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            } else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Translate(speed * Time.deltaTime, 0f, 0f);
                 transform.eulerAngles = new Vector3(0, -180, 0);
                 animator.SetBool("isRunning", true);
-            }else {
+            } else {
 
                 animator.SetBool("isRunning", false);
             }
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         vulnerable = true;
         Color temp = GetComponent<SpriteRenderer>().color;
         temp.a = 1f;
-        GetComponent<SpriteRenderer>().color = temp;       
+        GetComponent<SpriteRenderer>().color = temp;
     }
 
     /*private void OnTriggerStay2D(Collider2D collision)
@@ -97,7 +97,37 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Floor")
         {
             canJump = true;
-        } 
+        }
+    }
+
+    public void TakeDamage() {
+
+
+
+        if (hasBabies == false)
+        {
+            Destroy(gameObject);
+            GameManager.Instance.defeated = true;
+        }
+
+        for (int i = 0; i < babyCount; i++)
+        {
+            GameObject lostBaby = Instantiate(babyPickup, babyspawnPoint.position, babyspawnPoint.rotation);
+            lostBaby.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-20, 20), 10), ForceMode2D.Impulse);
+            Destroy(lostBaby, 5f);
+        }
+
+        print("pierdo bebe");
+        babyCount = 0;
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(-2, 4), ForceMode2D.Impulse);
+        vulnerable = false;
+        Color temp = GetComponent<SpriteRenderer>().color;
+        temp.a = 0.5f;
+        GetComponent<SpriteRenderer>().color = temp;
+        StartCoroutine(gotHit());
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -119,32 +149,12 @@ public class PlayerController : MonoBehaviour
         //si se colisiona con un enemigo y hay bebes, el babyCount baja, si no hay bebes, moris
         //la colision te empuja hacia atras, te vuelve ivulnerable 3 segundos y transparente.
         //Se lanzan los bebes que tenia encima.
-        if (collision.gameObject.tag == "Enemy" && hasBabies == true && vulnerable == true)
-        {
-            for (int i = 0; i < babyCount; i++)
-            {
-                GameObject lostBaby = Instantiate(babyPickup, babyspawnPoint.position, babyspawnPoint.rotation);
-                lostBaby.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-20, 20), 10), ForceMode2D.Impulse);
-                Destroy(lostBaby, 5f);
-            }
-
-            print("pierdo bebe");
-            babyCount = 0;
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(-2, 4), ForceMode2D.Impulse);
-            vulnerable = false;
-            Color temp = GetComponent<SpriteRenderer>().color;
-            temp.a = 0.5f;
-            GetComponent<SpriteRenderer>().color = temp;
-            StartCoroutine(gotHit());
-        }
-
-        else if (collision.gameObject.tag == "Enemy" && hasBabies == false && vulnerable == true)
-        {
-            Destroy(gameObject);
-            GameManager.Instance.defeated = true;
-        }
-    }      
+        //if (collision.gameObject.tag == "Enemy" && vulnerable == true)
+        //{
+        //    TakeDamage();
+        //}
     }
+}
 
 
 
