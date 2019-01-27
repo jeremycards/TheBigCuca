@@ -40,4 +40,9 @@ public class TimeManager : MonoBehaviour {
             tempTime = 0;
         timeText.text = tempTime.ToString();
     }
+
+    public float GetElapsedtime()
+    {
+        return elapsedTime;
+    }
 }
