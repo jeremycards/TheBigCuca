@@ -17,7 +17,6 @@ public class CameraController : MonoBehaviour
         }
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         if (player) {
-
             transform.position = player.transform.position + offset;
         }
     }

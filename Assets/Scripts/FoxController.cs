@@ -27,13 +27,14 @@ public class FoxController : MonoBehaviour {
 
         animator = GetComponentInParent<Animator>();
         playerPos = GameObject.FindGameObjectWithTag("Player").transform;
-
+        animator.SetBool("isPatrolin", true);
     }
 
     public void SetPatrolPoints(Transform startPatrolPoint, Transform endPatrolPoint) {
 
         StartPatrolPoint = startPatrolPoint;
         EndPatrolPoint = endPatrolPoint;
+
 
     }
 
@@ -63,18 +64,18 @@ public class FoxController : MonoBehaviour {
         }
         else {
 
-           
 
+
+           // 
 
         }
         float distanceToPlayer = Vector2.Distance(this.transform.position, playerPos.position);
         if (distanceToPlayer < atackRange)
         {
-           
+
+            PlayerInSigth = true;
             if (Time.time > lastAtackTime + atackDelay)
             {
-
-                PlayerInSigth = true;
                 animator.SetTrigger("Atack");
                 lastAtackTime = Time.time;
 

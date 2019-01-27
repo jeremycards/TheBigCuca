@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 212504981739641066}
   - component: {fileID: 61837733846462676}
   - component: {fileID: 114418161111065158}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: Foxy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4503519950129916}
   - component: {fileID: 212665084750474006}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: FoxRender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4467597815109024}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: groundDetection
   m_TagString: GrounDetection
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4786909480068896}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: StartPatrolPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

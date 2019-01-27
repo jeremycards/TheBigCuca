@@ -9,6 +9,7 @@ TagManager:
   - Baby
   - Tree
   - Goal
+  - GrounDetection
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Plataforms
   - Background-3
   - Background-4
-  - 
+  - Enemys
   - 
   - 
   - 
