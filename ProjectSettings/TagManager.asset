@@ -22,8 +22,8 @@ TagManager:
   - Babies
   - Floor
   - Plataforms
-  - 
-  - 
+  - Background-3
+  - Background-4
   - 
   - 
   - 
@@ -45,6 +45,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background-4
+    uniqueID: 3963862095
+    locked: 0
+  - name: Background-3
+    uniqueID: 748987287
     locked: 0
   - name: grass
     uniqueID: 4212977395
