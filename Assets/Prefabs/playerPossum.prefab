@@ -465,7 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHeight: 11
+  jumpHeight: 15
   babyCount: 0
   hasBabies: 1
   vulnerable: 1
