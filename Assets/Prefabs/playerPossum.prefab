@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 70221864648195896}
   - component: {fileID: 70830828277413186}
   - component: {fileID: 61818348875421714}
+  - component: {fileID: 61568058554763228}
   m_Layer: 8
   m_Name: playerPossum
   m_TagString: Player
@@ -255,6 +256,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61568058554763228
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826086605571610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.108679, y: 1.3633769}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 27.64, y: 8.61}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3107405, y: 4.1166196}
+  m_EdgeRadius: 0
 --- !u!61 &61818348875421714
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -267,7 +293,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9132404, y: 0.8679408}
+  m_Offset: {x: 2.72478, y: 0.6951189}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -278,7 +304,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.783144, y: 6.047512}
+  m_Size: {x: 11.406221, y: 6.393156}
   m_EdgeRadius: 0
 --- !u!65 &65009495461553048
 BoxCollider:
@@ -352,8 +378,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8.173083, y: -0.3421078}
-  m_Size: {x: 8.048621, y: 9.020741}
+  m_Offset: {x: 6.973728, y: -0.28449816}
+  m_Size: {x: 2.8401203, y: 7.983808}
   m_Direction: 0
 --- !u!70 &70830828277413186
 CapsuleCollider2D:
@@ -367,8 +393,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5162605, y: -0.12399747}
-  m_Size: {x: 7.1366286, y: 8.577215}
+  m_Offset: {x: -1.9851764, y: -0.23793918}
+  m_Size: {x: 2.13374, y: 7.960192}
   m_Direction: 0
 --- !u!95 &95167719510629308
 Animator:
@@ -507,7 +533,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1580500233
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bed4d329b56ae8a4895d31a121f87d1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -553,7 +579,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735212069
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -599,7 +625,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735212069
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -645,7 +671,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735212069
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -691,7 +717,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735212069
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -737,7 +763,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735212069
-  m_SortingLayer: 4
+  m_SortingLayer: 6
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 1b5741f2aec97f444918ba3b8c490fbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
