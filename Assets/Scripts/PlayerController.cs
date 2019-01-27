@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         //movimiento basico de derecha a izquierda, solo si no sos ivulnerable después de un hit.
 
-        if (vulnerable == true)
+        if (vulnerable == true && GameManager.Instance.defeated == false)
         {
 
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))

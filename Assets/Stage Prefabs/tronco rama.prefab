@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4072182856766630}
   - component: {fileID: 212818129847865524}
   - component: {fileID: 68231967158262838}
-  - component: {fileID: 68795222787352662}
   m_Layer: 0
   m_Name: tronco rama
   m_TagString: Floor
@@ -36,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1449577129563130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 165.61, y: 1.89, z: 1.859375}
+  m_LocalPosition: {x: 95.7, y: 1.89, z: 1.859375}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,8 +56,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -4.760971, y: -3.8315768}
-  - {x: -4.0603943, y: -3.086464}
+  - {x: 0.14659882, y: -1.2551031}
+  - {x: -3.8763657, y: -1.1847796}
   - {x: -4.307907, y: 3.181097}
   - {x: -2.6483002, y: 2.9613547}
   - {x: -0.86964417, y: 3.1921492}
@@ -75,24 +74,8 @@ EdgeCollider2D:
   - {x: 6.05513, y: 0.34250295}
   - {x: 5.10289, y: -0.6297461}
   - {x: 0.99139404, y: -1.161133}
-  - {x: 1.8622437, y: -3.8704362}
---- !u!68 &68795222787352662
-EdgeCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1449577129563130}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -4.8094788, y: -3.8315768}
-  - {x: 1.802414, y: -3.8315773}
+  - {x: 0.90514374, y: -1.2335955}
+  - {x: 0.14459229, y: -1.293961}
 --- !u!212 &212818129847865524
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -9,6 +9,7 @@ TagManager:
   - Baby
   - Tree
   - Goal
+  - GrounDetection
   layers:
   - Default
   - TransparentFX
@@ -63,6 +64,9 @@ TagManager:
     locked: 0
   - name: babies
     uniqueID: 1735212069
+    locked: 0
+  - name: Enemy
+    uniqueID: 1620290259
     locked: 0
   - name: foreground
     uniqueID: 2276839917
