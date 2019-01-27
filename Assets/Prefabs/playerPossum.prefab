@@ -90,9 +90,11 @@ GameObject:
   - component: {fileID: 4640661191383116}
   - component: {fileID: 114486784787921504}
   - component: {fileID: 50086365610766156}
-  - component: {fileID: 61638442463687596}
   - component: {fileID: 212168052478787320}
   - component: {fileID: 95167719510629308}
+  - component: {fileID: 70221864648195896}
+  - component: {fileID: 70830828277413186}
+  - component: {fileID: 61818348875421714}
   m_Layer: 8
   m_Name: playerPossum
   m_TagString: Player
@@ -195,7 +197,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1826086605571610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.87, y: 1.85, z: 0}
+  m_LocalPosition: {x: -55.148743, y: 6.797065, z: 0}
   m_LocalScale: {x: 0.24387634, y: 0.21759503, z: 0.086691245}
   m_Children:
   - {fileID: 4191623556709112}
@@ -253,7 +255,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61638442463687596
+--- !u!61 &61818348875421714
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,7 +267,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.1, y: -0.0013313293}
+  m_Offset: {x: 2.9132404, y: 0.8679408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -276,7 +278,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.07, y: 8.545616}
+  m_Size: {x: 11.783144, y: 6.047512}
   m_EdgeRadius: 0
 --- !u!65 &65009495461553048
 BoxCollider:
@@ -338,6 +340,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!70 &70221864648195896
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826086605571610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.173083, y: -0.3421078}
+  m_Size: {x: 8.048621, y: 9.020741}
+  m_Direction: 0
+--- !u!70 &70830828277413186
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1826086605571610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5162605, y: -0.12399747}
+  m_Size: {x: 7.1366286, y: 8.577215}
+  m_Direction: 0
 --- !u!95 &95167719510629308
 Animator:
   serializedVersion: 3
@@ -474,8 +506,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1580500233
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bed4d329b56ae8a4895d31a121f87d1e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

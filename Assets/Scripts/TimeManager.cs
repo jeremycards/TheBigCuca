@@ -15,11 +15,16 @@ public class TimeManager : MonoBehaviour {
     {
         elapsedTime = initialTime;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        UpdateTime();	
+        UpdateTime();
+
+        if (elapsedTime <= 4)
+        {
+            GameManager.Instance.defeated = true;
+        }
 	}
 
     private void UpdateTime()

@@ -20,8 +20,8 @@ TagManager:
   - 
   - Player
   - Babies
-  - 
-  - 
+  - Floor
+  - Plataforms
   - 
   - 
   - 
@@ -45,4 +45,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: grass
+    uniqueID: 4212977395
+    locked: 0
+  - name: babies
+    uniqueID: 1735212069
+    locked: 0
+  - name: platforms
+    uniqueID: 1712661111
+    locked: 0
+  - name: player
+    uniqueID: 1580500233
+    locked: 0
+  - name: foreground
+    uniqueID: 2276839917
+    locked: 0
+  - name: foreground2
+    uniqueID: 3310690725
     locked: 0
