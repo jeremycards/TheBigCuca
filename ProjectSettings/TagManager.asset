@@ -49,14 +49,14 @@ TagManager:
   - name: grass
     uniqueID: 4212977395
     locked: 0
-  - name: babies
-    uniqueID: 1735212069
-    locked: 0
   - name: platforms
     uniqueID: 1712661111
     locked: 0
   - name: player
     uniqueID: 1580500233
+    locked: 0
+  - name: babies
+    uniqueID: 1735212069
     locked: 0
   - name: foreground
     uniqueID: 2276839917
