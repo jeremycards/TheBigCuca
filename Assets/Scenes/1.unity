@@ -640,11 +640,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c97152d9a24010049ad327d76212fae5, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &970142833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1114103506323566, guid: 3936829648042ec41a50058c9948e4de,
-    type: 2}
-  m_PrefabInternal: {fileID: 1539358928}
 --- !u!1001 &976911862
 Prefab:
   m_ObjectHideFlags: 0
@@ -732,11 +727,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1161717974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1787805227046456, guid: f7c364342d054734aae71a21440af697,
-    type: 2}
-  m_PrefabInternal: {fileID: 213088403}
 --- !u!1001 &1186608291
 Prefab:
   m_ObjectHideFlags: 0
@@ -1247,11 +1237,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4490927608294240, guid: 3936829648042ec41a50058c9948e4de, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -67.6
+      value: -63.3
       objectReference: {fileID: 0}
     - target: {fileID: 4490927608294240, guid: 3936829648042ec41a50058c9948e4de, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.02
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4490927608294240, guid: 3936829648042ec41a50058c9948e4de, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2014,7 +2004,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 50
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2040,7 +2030,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111958530}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.858943, y: 1.06, z: -8.59}
+  m_LocalPosition: {x: -57.395565, y: 5.43, z: -17.281567}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2057,6 +2047,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a891ca8f57c35b438dc04201e066214, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLimitLevel: {fileID: 970142833}
-  endLimitLevel: {fileID: 1161717974}
-  smooth: 10
