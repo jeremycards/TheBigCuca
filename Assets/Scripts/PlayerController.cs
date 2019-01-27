@@ -12,6 +12,16 @@ public class PlayerController : MonoBehaviour
     public bool canJump = false;
     public GameObject babyPickup;
     public Transform babyspawnPoint;
+    public Animator animator;
+    public Rigidbody2D rg2;
+
+
+    private void Start()
+    {
+        animator = GetComponentInParent<Animator>();
+
+        rg2 = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
@@ -24,18 +34,26 @@ public class PlayerController : MonoBehaviour
             {
 
                 transform.Translate(speed * Time.deltaTime, 0f, 0f);
-            }
+                transform.eulerAngles = new Vector3(0,0,0);
+                animator.SetBool("isRunning",true);
 
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            }else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.Translate(-speed * Time.deltaTime, 0f, 0f);
+                transform.Translate(speed * Time.deltaTime, 0f, 0f);
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                animator.SetBool("isRunning", true);
+            }else {
+
+                animator.SetBool("isRunning", false);
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
             {
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
                 canJump = false;
+                animator.SetTrigger("StartJump");
             }
+            animator.SetFloat("JumpVelocity", rg2.velocity.y);
         }
         //Si tenes bebes, el bool hasBabies es true.
         if (babyCount > 0)
